@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #07031a;
+    color: #f4f6ff;
+    padding: 1%;
+}
+
+nav {
+    background-color: #4f8a8b;
+    color: #f4f6ff;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #f4f6ff;
+}
+
+nav a:hover {
+    background-color: #305353;
+}
+
+.container {
+    background-color: #fbd46d;
+    width: auto;
+    height: 100vh;
+}
+
+.column-services {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.gym {
+    background-image: url("../imagenes/gym.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.zumba {
+    background-image: url("../imagenes/zumba.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.yoga {
+    background-image: url("../imagenes/yoga.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.reception {
+    background-image: url("../imagenes/receptionist.jpg");
+    background-size: cover;
+}
+
+.room {
+    background-image: url("../imagenes/room.jpg");
+    background-size: cover;
+}
+
+.column-services h1 {
+    padding: 10px;
+    font-weight: bold;
+    color: #f4f6ff;
+    background-color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slide {
+    height: 100vh;
+    width: auto;
+}
+
+.slide h1,
+.slide h3 {
+    position: relative;
+    text-align: center;
+    top: 35%;
+    font-weight: bolder;
+    color: gold;
+    font-size: 500%;
+    text-shadow: 5px 5px black;
+}
+
+.cont-form {
+    position: relative;
+    width: 50vh;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(48, 83, 83, 0.5);
+}
+
+.box input[type="date"],
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    display: block;
+    margin: 5px auto;
+    background: #07031a;
+    color: #eeeeee;
+    border: 2px solid #00adb5;
+    padding: 5px, 10px;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px, 40px;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+.box input[type="date"]:focus,
+.box input[type="email"]:focus,
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box h3,
+.box h1 {
+    text-align: center;
+    color: #f4f6ff;
+    text-shadow: 2px 2px black;
+}
+
+.box {
+    opacity: 1;
+}
