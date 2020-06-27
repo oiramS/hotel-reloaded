@@ -31,8 +31,12 @@
         <?php
             if(!empty($_GET["id"]))
                 $id = $_GET["id"];
+            elseif(!empty($_GET["class"]))
+                $id = "confirm-service";
+            elseif(!empty($_POST["rsvp"]))
+                $id="confirm-rsvp";
             else
-                $id = "home";
+                $id="home";
             switch($id){
                 case "home":
                     require 'inicio.php';
@@ -46,7 +50,14 @@
                 case "close":
                     require 'close.php';
                 break;
+                case "confirm-service":
+                    require 'confirmation.php';
+                break;
+                case "confirm-rsvp":
+                    require 'confirmation-rsvp.php';
+                break;
             }
+
         ?>
     </div>
 

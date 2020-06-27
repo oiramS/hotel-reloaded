@@ -160,12 +160,61 @@ nav a:hover {
 }
 
 .box h3,
-.box h1 {
+.box h1,
+h1,
+h2,
+h3 {
     text-align: center;
     color: #f4f6ff;
     text-shadow: 2px 2px black;
 }
 
+.confirm-rsvp {
+    text-align: center;
+    background-color: #140d38;
+    background-size: cover;
+    padding: 12px;
+    height: 100vh;
+}
+
 .box {
     opacity: 1;
+}
+
+h1,
+h2,
+h3 {
+    padding: 12px;
+}
+
+.rsvp {
+    text-align: center;
+    background-color: #0f034b;
+    background-size: cover;
+    padding: 12px;
+    height: 100vh;
+}
+
+select {
+    width: 300px;
+    padding: 5px 10px;
+    display: block;
+    background: none;
+    border: none;
+    height: 30px;
+    border-radius: 24px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px auto;
+    background-color: #313946;
+    color: #ffffff;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lock {
+    display: none;
 }
